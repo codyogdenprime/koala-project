@@ -16,12 +16,16 @@
       <input type="text" id="nameIn" value="" placeholder="Name">
       <input type="text" id="ageIn" value="" placeholder="Age">
       <input type="text" id="sexIn" value="" placeholder="Sex">
-      <input type="text" id="readyForTransferIn" value="" placeholder="Transfer">
+      <select id="transferIn">
+        <option>true</option>
+        <option>false</option>
+      </select>
       <input type="text" id="notesIn" value="" placeholder="Notes">
       <button type="button" id="addButton">Add Koala</button>
     </div>
     <div id='editKoala'>
       <h2>Edit Koala</h2>
+      <input type="hidden" id="idEditIn" />
       <input type="text" id="nameEditIn" value="" placeholder="Name">
       <input type="text" id="ageEditIn" value="" placeholder="Age">
       <input type="text" id="sexEditIn" value="" placeholder="Sex">
@@ -31,6 +35,7 @@
     </div>
     <div id='viewKoalas'>
       <h2>All Koalas</h2>
+      <div id="koala-output"></div>
     </div>
   </body>
 </html>
